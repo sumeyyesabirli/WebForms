@@ -103,6 +103,76 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Aboutus.aspx" />
+    <Content Include="Admin\AdminBlog.aspx" />
+    <Content Include="Admin\AdminPackages.aspx" />
+    <Content Include="Admin\AdminAboutus.aspx" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\assets\images\dashboard\circle.png" />
+    <Content Include="Admin\assets\images\dashboard\circle.svg" />
+    <Content Include="Admin\assets\images\dashboard\img_1.jpg" />
+    <Content Include="Admin\assets\images\dashboard\img_2.jpg" />
+    <Content Include="Admin\assets\images\dashboard\img_3.jpg" />
+    <Content Include="Admin\assets\images\dashboard\img_4.jpg" />
+    <Content Include="Admin\assets\images\faces-clipart\pic-1.png" />
+    <Content Include="Admin\assets\images\faces-clipart\pic-2.png" />
+    <Content Include="Admin\assets\images\faces-clipart\pic-3.png" />
+    <Content Include="Admin\assets\images\faces-clipart\pic-4.png" />
+    <Content Include="Admin\assets\images\faces\face1.jpg" />
+    <Content Include="Admin\assets\images\faces\face10.jpg" />
+    <Content Include="Admin\assets\images\faces\face11.jpg" />
+    <Content Include="Admin\assets\images\faces\face12.jpg" />
+    <Content Include="Admin\assets\images\faces\face13.jpg" />
+    <Content Include="Admin\assets\images\faces\face14.jpg" />
+    <Content Include="Admin\assets\images\faces\face15.jpg" />
+    <Content Include="Admin\assets\images\faces\face16.jpg" />
+    <Content Include="Admin\assets\images\faces\face17.jpg" />
+    <Content Include="Admin\assets\images\faces\face18.jpg" />
+    <Content Include="Admin\assets\images\faces\face19.jpg" />
+    <Content Include="Admin\assets\images\faces\face2.jpg" />
+    <Content Include="Admin\assets\images\faces\face20.jpg" />
+    <Content Include="Admin\assets\images\faces\face21.jpg" />
+    <Content Include="Admin\assets\images\faces\face22.jpg" />
+    <Content Include="Admin\assets\images\faces\face23.jpg" />
+    <Content Include="Admin\assets\images\faces\face24.jpg" />
+    <Content Include="Admin\assets\images\faces\face25.jpg" />
+    <Content Include="Admin\assets\images\faces\face26.jpg" />
+    <Content Include="Admin\assets\images\faces\face27.jpg" />
+    <Content Include="Admin\assets\images\faces\face3.jpg" />
+    <Content Include="Admin\assets\images\faces\face4.jpg" />
+    <Content Include="Admin\assets\images\faces\face5.jpg" />
+    <Content Include="Admin\assets\images\faces\face6.jpg" />
+    <Content Include="Admin\assets\images\faces\face7.jpg" />
+    <Content Include="Admin\assets\images\faces\face8.jpg" />
+    <Content Include="Admin\assets\images\faces\face9.jpg" />
+    <Content Include="Admin\assets\images\favicon.ico" />
+    <Content Include="Admin\assets\images\favicon.png" />
+    <Content Include="Admin\assets\images\logo-mini.svg" />
+    <Content Include="Admin\assets\images\logo.svg" />
+    <Content Include="Admin\assets\images\sprites\blue.png" />
+    <Content Include="Admin\assets\images\sprites\dark.png" />
+    <Content Include="Admin\assets\images\sprites\flag.png" />
+    <Content Include="Admin\assets\images\sprites\green.png" />
+    <Content Include="Admin\assets\images\sprites\jsgrid-icons.png" />
+    <Content Include="Admin\assets\images\sprites\red.png" />
+    <Content Include="Admin\assets\images\sprites\yellow.png" />
+    <Content Include="Admin\assets\js\chart.js" />
+    <Content Include="Admin\assets\js\dashboard.js" />
+    <Content Include="Admin\assets\js\file-upload.js" />
+    <Content Include="Admin\assets\js\hoverable-collapse.js" />
+    <Content Include="Admin\assets\js\jquery.cookie.js" />
+    <Content Include="Admin\assets\js\misc.js" />
+    <Content Include="Admin\assets\js\off-canvas.js" />
+    <Content Include="Admin\assets\js\todo.js" />
+    <Content Include="Admin\assets\js\todolist.js" />
+    <Content Include="Admin\assets\vendors\chart.js\Chart.min.js" />
+    <Content Include="Admin\assets\vendors\css\vendor.bundle.base.css" />
+    <Content Include="Admin\assets\vendors\js\vendor.bundle.base.js" />
+    <Content Include="Admin\assets\vendors\mdi\css\materialdesignicons.min.css" />
+    <Content Include="Admin\BlogCategory.aspx" />
+    <Content Include="Admin\BlogList.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\PackagesList.aspx" />
+    <Content Include="Admin\Settings.aspx" />
     <Content Include="assets\css\animate.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\flaticon.css" />
@@ -362,6 +432,72 @@
     <Content Include="assets\scss\_testimonial.scss" />
     <Content Include="assets\scss\_variables.scss" />
     <Content Include="assets\scss\_video-area.scss" />
+    <Content Include="Admin\AdminPage.Master" />
+    <Content Include="Admin\assets\css\style.css.map" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Bold.eot" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Bold.woff" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Bold.woff2" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Light.eot" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Light.woff" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Light.woff2" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Medium.eot" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Medium.woff" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Medium.woff2" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Regular.eot" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Regular.woff" />
+    <Content Include="Admin\assets\fonts\Ubuntu\Ubuntu-Regular.woff2" />
+    <Content Include="Admin\assets\scss\components\_badges.scss" />
+    <Content Include="Admin\assets\scss\components\_bootstrap-progress.scss" />
+    <Content Include="Admin\assets\scss\components\_breadcrumbs.scss" />
+    <Content Include="Admin\assets\scss\components\_buttons.scss" />
+    <Content Include="Admin\assets\scss\components\_cards.scss" />
+    <Content Include="Admin\assets\scss\components\_checkbox-radio.scss" />
+    <Content Include="Admin\assets\scss\components\_dropdown.scss" />
+    <Content Include="Admin\assets\scss\components\_forms.scss" />
+    <Content Include="Admin\assets\scss\components\_icons.scss" />
+    <Content Include="Admin\assets\scss\components\_lists.scss" />
+    <Content Include="Admin\assets\scss\components\_preview.scss" />
+    <Content Include="Admin\assets\scss\components\_tables.scss" />
+    <Content Include="Admin\assets\scss\components\_todo-list.scss" />
+    <Content Include="Admin\assets\scss\landing-screens\_auth.scss" />
+    <Content Include="Admin\assets\scss\mixins\_animation.scss" />
+    <Content Include="Admin\assets\scss\mixins\_background.scss" />
+    <Content Include="Admin\assets\scss\mixins\_badges.scss" />
+    <Content Include="Admin\assets\scss\mixins\_blockqoute.scss" />
+    <Content Include="Admin\assets\scss\mixins\_breadcrumbs.scss" />
+    <Content Include="Admin\assets\scss\mixins\_buttons.scss" />
+    <Content Include="Admin\assets\scss\mixins\_cards.scss" />
+    <Content Include="Admin\assets\scss\mixins\_misc.scss" />
+    <Content Include="Admin\assets\scss\mixins\_pagination.scss" />
+    <Content Include="Admin\assets\scss\mixins\_popovers.scss" />
+    <Content Include="Admin\assets\scss\mixins\_text.scss" />
+    <Content Include="Admin\assets\scss\mixins\_tooltips.scss" />
+    <Content Include="Admin\assets\scss\style.scss" />
+    <Content Include="Admin\assets\scss\_dashboard.scss" />
+    <Content Include="Admin\assets\scss\_demo.scss" />
+    <Content Include="Admin\assets\scss\_fonts.scss" />
+    <Content Include="Admin\assets\scss\_footer.scss" />
+    <Content Include="Admin\assets\scss\_functions.scss" />
+    <Content Include="Admin\assets\scss\_layouts.scss" />
+    <Content Include="Admin\assets\scss\_misc.scss" />
+    <Content Include="Admin\assets\scss\_navbar.scss" />
+    <Content Include="Admin\assets\scss\_reset.scss" />
+    <Content Include="Admin\assets\scss\_sidebar.scss" />
+    <Content Include="Admin\assets\scss\_typography.scss" />
+    <Content Include="Admin\assets\scss\_utilities.scss" />
+    <Content Include="Admin\assets\scss\_variables.scss" />
+    <Content Include="Admin\assets\scss\_vertical-wrapper.scss" />
+    <Content Include="Admin\assets\scss\_widget-grid.scss" />
+    <Content Include="Admin\assets\vendors\js\bootstrap.min.js.map" />
+    <Content Include="Admin\assets\vendors\mdi\css\materialdesignicons.min.css.map" />
+    <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -401,6 +537,69 @@
     </Compile>
     <Compile Include="Aboutus.aspx.designer.cs">
       <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminBlog.aspx.cs">
+      <DependentUpon>AdminBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminBlog.aspx.designer.cs">
+      <DependentUpon>AdminBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPackages.aspx.cs">
+      <DependentUpon>AdminPackages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPackages.aspx.designer.cs">
+      <DependentUpon>AdminPackages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPage.Master.cs">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPage.Master.designer.cs">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAboutus.aspx.cs">
+      <DependentUpon>AdminAboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAboutus.aspx.designer.cs">
+      <DependentUpon>AdminAboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BlogCategory.aspx.cs">
+      <DependentUpon>BlogCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BlogCategory.aspx.designer.cs">
+      <DependentUpon>BlogCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BlogList.aspx.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BlogList.aspx.designer.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PackagesList.aspx.cs">
+      <DependentUpon>PackagesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PackagesList.aspx.designer.cs">
+      <DependentUpon>PackagesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -467,7 +666,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
