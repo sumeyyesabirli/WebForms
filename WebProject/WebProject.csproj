@@ -593,9 +593,6 @@
     <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.ttf" />
     <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff" />
     <Content Include="Admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
-    <Compile Include="Entity\Aboutus.cs" />
-    <Compile Include="Entity\BaseEntity.cs" />
-    <Compile Include="Entity\Blog.cs" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -723,6 +720,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Entity\Aboutus.cs" />
+    <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\Blog.cs" />
     <Compile Include="Entity\BlogCategory.cs" />
     <Compile Include="Entity\Package.cs" />
     <Compile Include="Entity\Settings.cs" />
@@ -743,9 +743,9 @@
     <Compile Include="HomaPage.Master.designer.cs">
       <DependentUpon>HomaPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20241018065351_mig_1.cs" />
-    <Compile Include="Migrations\20241018065351_mig_1.Designer.cs">
-      <DependentUpon>20241018065351_mig_1.cs</DependentUpon>
+    <Compile Include="Migrations\20241018152509_mig_1.cs" />
+    <Compile Include="Migrations\20241018152509_mig_1.Designer.cs">
+      <DependentUpon>20241018152509_mig_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ApplicationDbContextModelSnapshot.cs" />
     <Compile Include="Packages.aspx.cs">

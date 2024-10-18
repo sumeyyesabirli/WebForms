@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebProject.Entity;
-using System.Configuration;
+
 
 public class ApplicationDbContext : DbContext
 {
@@ -12,7 +12,6 @@ public class ApplicationDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var connectionString = ConfigurationManager.ConnectionStrings["PostgresConnection"].ConnectionString;
-        optionsBuilder.UseNpgsql(connectionString);
+        optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=GoTripDb;Username=postgres;Password=12345;\r\n");
     }
 }

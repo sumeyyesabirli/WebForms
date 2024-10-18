@@ -28,15 +28,13 @@
                     </div>
                     <div class="form-group">
                         <label>Fotoğraf Ekle</label>
-                        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control file-upload-info" placeholder="Fotoğraf Yükle" />
-                        <asp:Button ID="ButtonPackagesPhotoAdd" runat="server" Text="Resim Yükle" CssClass="btn btn-gradient-primary me-2" OnClick="ButtonPackagesPhotoAdd_Click" />
+                        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control file-upload-info" placeholder="Fotoğraf Yükle" />   
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea1">Tur Detayı</label>
                         <asp:TextBox ID="TextTourDetail" runat="server" CssClass="form-control" TextMode="MultiLine" Height="100px" placeholder="Tur Detayı"></asp:TextBox>
                     </div>
                     <asp:Button ID="ButtonPackagesAdd" runat="server" Text="Ekle" CssClass="btn btn-gradient-primary me-2" OnClick="ButtonPackagesAdd_Click" />
-                    <asp:Label ID="LabelPhotoName" runat="server"></asp:Label>
                 </form>
             </div>
         </div>
