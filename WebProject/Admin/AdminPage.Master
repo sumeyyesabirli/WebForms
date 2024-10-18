@@ -238,7 +238,7 @@
                     </li>               
                     <li class="nav-item">
                         <a class="nav-link" href="Settings.aspx">
-                            <span class="menu-title">Ayarlar</span>             
+                            <span class="menu-title">Site Genel Ayarları</span>             
                             <i class="mdi mdi-medical-bag menu-icon"></i>
                         </a>                        
                     </li>

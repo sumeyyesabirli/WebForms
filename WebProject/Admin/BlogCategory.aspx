@@ -18,6 +18,5 @@
                 </form>
             </div>
         </div>
-        <a href="BlogCategory.aspx">BlogCategory.aspx</a>
     </div>
 </asp:Content>

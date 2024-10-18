@@ -60,6 +60,15 @@ namespace WebProject.Admin
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
+        /// ButtonPackagesPhotoAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonPackagesPhotoAdd;
+
+        /// <summary>
         /// TextTourDetail control.
         /// </summary>
         /// <remarks>
@@ -76,5 +85,14 @@ namespace WebProject.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonPackagesAdd;
+
+        /// <summary>
+        /// LabelPhotoName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelPhotoName;
     }
 }
