@@ -4,7 +4,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -18,30 +17,33 @@
     </div>
 
     <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="single-place mb-30">
-                <div class="place-img">
-                    <img src="assets/img/service/services1.jpg" alt="Featured Tour">
-                </div>
-                <div class="place-cap">
-                    <div class="place-cap-top">
-                        <span>
-                            <i class="fas fa-star"></i>
-                            <span>8.0 Superb</span>
-                        </span>
-                        <h3>
-                            <a href="#">The Dark Forest Adventure</a>
-                        </h3>
-                        <p class="dolor">$1870 <span>/ Per Person</span></p>
+
+        <asp:Repeater ID="RepeaterPackages" runat="server">
+            <ItemTemplate>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single-place mb-30">
+                        <div class="place-img">
+                            <img src='<%# Eval("Image") %>' alt="Featured Tour">
+                        </div>
+                        <div class="place-cap">
+                            <div class="place-cap-top">
+                                <span>
+                                    <i class="fas fa-star"></i></span>
+                                <h3>
+                                    <a href="#"><%# Eval("Name") %></a>
+                                </h3>
+                                <p class="dolor">$<%# Eval("Price") %> <span>/ Per Person</span></p>
+                            </div>
+                            <div class="place-cap-bottom">
+                                <ul>
+                                    <li><i class="far fa-clock"></i><%# Eval("Duration") %> Gün </li>
+                                    <li><i class="fas fa-map-marker-alt"></i><%# Eval("Location") %></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="place-cap-bottom">
-                        <ul>
-                            <li><i class="far fa-clock"></i> 3 Days</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Los Angeles</li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-        </div>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
 </asp:Content>

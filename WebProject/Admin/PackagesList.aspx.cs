@@ -1,105 +1,95 @@
 ﻿using System;
 using System.Linq;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace WebProject.Admin
 {
     public partial class PackagesList : System.Web.UI.Page
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context = new ApplicationDbContext();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            _context = new ApplicationDbContext();
-
             if (!IsPostBack)
             {
-                LoadPackages();
+                BindGridView();
+
+            }
+        }
+        private void BindGridView()
+        {
+            var packages = _context.Packages
+                                   .Select(p => new
+                                   {
+                                       p.Id,
+                                       p.Name,
+                                       p.Price,
+                                       p.Duration,
+                                       p.Location,
+                                       p.Image,
+                                       p.Detail
+                                   })
+                                   .ToList();
+
+            GridView1.DataSource = packages;
+            GridView1.DataBind();
+        }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Guncelle")
+            {
+                int paketID = Convert.ToInt32(e.CommandArgument);
+
+                var package = _context.Packages.Find(paketID);
+                if (package != null)
+                {
+                    hiddenPackageId.Value = package.Id.ToString();
+                    txtPackageName.Text = package.Name;
+                    txtPrice.Text = package.Price.ToString();
+                    txtDuration.Text = package.Duration;
+                    txtLocation.Text = package.Location;
+
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                }
+            }
+            else if (e.CommandName == "Sil")
+            {
+                int paketID = Convert.ToInt32(e.CommandArgument);
+                var package = _context.Packages.Find(paketID);
+                if (package != null)
+                {
+                    _context.Packages.Remove(package);
+                    _context.SaveChanges();
+                }
+
+                BindGridView();
             }
         }
 
-        private void LoadPackages()
+        protected void btnSave_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var packages = _context.Packages.ToList();
+            int paketID = Convert.ToInt32(hiddenPackageId.Value);
 
-                // GridView'e verileri bağlıyoruz
-                GridView1.DataSource = packages;
-                GridView1.DataBind();
-            }
-            catch (Exception ex)
+            var package = _context.Packages.Find(paketID);
+            if (package != null)
             {
-                Response.Write("Hata oluştu: " + ex.Message);
+                package.Name = txtPackageName.Text;
+                package.Price = Convert.ToDecimal(txtPrice.Text);
+                package.Duration = txtDuration.Text;
+                package.Location = txtLocation.Text;
+
+                _context.SaveChanges();
             }
+
+            BindGridView();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "closeModal();", true);
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             GridView1.PageIndex = e.NewPageIndex;
-            LoadPackages();
-        }
-
-        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            GridView1.EditIndex = e.NewEditIndex;
-            LoadPackages();
-        }
-
-        protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-            GridView1.EditIndex = -1;
-            LoadPackages();
-        }
-
-        protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
-        {
-            int packageId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-            var package = _context.Packages.FirstOrDefault(p => p.Id == packageId);
-
-            if (package != null)
-            {
-                GridViewRow row = GridView1.Rows[e.RowIndex];
-
-                var name = ((TextBox)row.Cells[1].Controls[0]).Text;
-                var priceText = ((TextBox)row.Cells[2].Controls[0]).Text;
-                var duration = ((TextBox)row.Cells[3].Controls[0]).Text;
-                var location = ((TextBox)row.Cells[4].Controls[0]).Text;
-                var detail = ((TextBox)row.Cells[5].Controls[0]).Text;
-
-                package.Name = name;
-                package.Price = decimal.Parse(priceText);
-                package.Duration = duration;
-                package.Location = location;
-                package.Detail = detail;
-
-                _context.SaveChanges();
-            }
-
-            GridView1.EditIndex = -1;
-            LoadPackages();
-        }
-
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            int packageId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
-            var package = _context.Packages.FirstOrDefault(p => p.Id == packageId);
-
-            if (package != null)
-            {
-                _context.Packages.Remove(package);
-                _context.SaveChanges();
-            }
-
-            LoadPackages();
-        }
-
-        protected void Page_Unload(object sender, EventArgs e)
-        {
-            if (_context != null)
-            {
-                _context.Dispose();
-            }
+            BindGridView();
         }
     }
 }

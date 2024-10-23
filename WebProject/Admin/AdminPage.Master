@@ -226,7 +226,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="AdminBlog.aspx">
-                            <span class="menu-title">Blog Ekle</span>
+                            <span class="menu-title">Blog Yazısı Ekle</span>
                             <i class="mdi mdi-contacts menu-icon"></i>
                         </a>
                     </li>

@@ -7,9 +7,6 @@ namespace WebProject.Admin
     public partial class AdminPackages : System.Web.UI.Page
     {
         private readonly ApplicationDbContext _context;
-        string filePath;
-        
-
         public AdminPackages()
         {
             _context = new ApplicationDbContext();

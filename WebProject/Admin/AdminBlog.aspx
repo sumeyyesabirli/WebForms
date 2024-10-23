@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="AdminBlog.aspx.cs" Inherits="WebProject.Admin.AdminBlog" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" Async="true"  CodeBehind="AdminBlog.aspx.cs" Inherits="WebProject.Admin.AdminBlog" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -39,7 +39,7 @@
                         <label for="exampleTextarea1">Blog Detayı</label>
                         <asp:TextBox ID="TextBlogDetail" runat="server" CssClass="form-control" TextMode="MultiLine" Height="100px" placeholder="Blog Detayı"></asp:TextBox>
                     </div>
-                    <asp:Button ID="ButtonPackagesAdd" runat="server" Text="Ekle" CssClass="btn btn-gradient-primary me-2" />
+                     <asp:Button ID="ButtonBlogAdd" runat="server" Text="Ekle" CssClass="btn btn-gradient-primary me-2" OnClick="ButtonBlogAdd_Click"/> 
                 </form>
             </div>
         </div>
